@@ -22,14 +22,14 @@ public class TestGreeter {
 
   @Test
   public void greetShouldIncludeTheOneBeingGreeted() {
-    String someone = "World";
+    String someone = "Hello World ";
 
     assertThat(greeter.greet(someone), containsString(someone));
   }
 
   @Test
   public void greetShouldIncludeGreetingPhrase() {
-    String someone = "World";
+    String someone = "SpiderMan";
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
